@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const path = require("path");
 const cookieParser = require("cookie-parser");
@@ -28,14 +29,14 @@ app.use(express.static(path.join(__dirname, "public")));
 const user1 = {
   name: "Dimitri Ivanovich Mendeleiv",
   email: "periodic@table.com",
-  password: "hydrogen",
+  password: process.env.USER1_PASSWORD,
   secret: "Actually prefers biology over chemistry",
 };
 
 const user2 = {
   name: "Neil Armstrong",
   email: "first@moon.com",
-  password: "nasa",
+  password: process.env.USER2_PASSWORD,
   secret: "Afraid of heights",
 };
 
