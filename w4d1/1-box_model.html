@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Box Model</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <style>
+    /* Box sizing: Content -> True width width + padding + border */
+    * {
+      box-sizing: border-box;
+    }
+
+    span {
+      display: inline-block;
+      width: 200px;
+      height: auto;
+
+      box-sizing: border-box;
+      font-size: 120px;
+      border: 2px solid brown;
+      background: beige;
+      padding: 20px;
+      margin: 20px;
+    }
+  </style>
+  <body>
+    <span>🥔</span>
+    <span>🥔</span>
+  </body>
+</html>

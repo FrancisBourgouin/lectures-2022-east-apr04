@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Flex!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      header {
+        background-color: aquamarine;
+        padding: 20px;
+        height: 200px;
+
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-around; /* Alignement of Main Axis */
+        align-items: center; /* Alignement of Cross Axis */
+      }
+      header:hover {
+        background-color: #ffaa00;
+      }
+
+      header h1 {
+      }
+
+      header nav {
+      }
+
+      section {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: space-evenly;
+      }
+      section article {
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Example Float</h1>
+      <nav>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <p>
+          Base 10 -> 0-9 230 -> 2 x 100 + 3 x 10 + 0 x 1 230 -> 2 x 10^2 + 2 x 10^1 + 0 x
+          10^0
+        </p>
+        <p>
+          Base 16 -> 0-9-a-b-c-d-e-f FF -> 15 x 16 + 15 x 1 FF -> 15 x 16^1 + 15 x 16^0 ->
+          255
+        </p>
+        <article>
+          <h1>Post #1</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat asperiores,
+            molestiae ratione culpa amet tempore iusto maiores rerum ad, at quae iure
+            accusantium. Voluptatibus perferendis voluptates id sit sed eveniet.
+          </p>
+        </article>
+        <article>
+          <h1>Post #1</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat asperiores,
+            molestiae ratione culpa amet tempore iusto maiores rerum ad, at quae iure
+            accusantium. Voluptatibus perferendis voluptates id sit sed eveniet.
+          </p>
+        </article>
+        <article>
+          <h1>Post #1</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat asperiores,
+            molestiae ratione culpa amet tempore iusto maiores rerum ad, at quae iure
+            accusantium. Voluptatibus perferendis voluptates id sit sed eveniet.
+          </p>
+        </article>
+        <article>
+          <h1>Post #1</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat asperiores,
+            molestiae ratione culpa amet tempore iusto maiores rerum ad, at quae iure
+            accusantium. Voluptatibus perferendis voluptates id sit sed eveniet.
+          </p>
+        </article>
+        <article>
+          <h1>Post #1</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat asperiores,
+            molestiae ratione culpa amet tempore iusto maiores rerum ad, at quae iure
+            accusantium. Voluptatibus perferendis voluptates id sit sed eveniet.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
