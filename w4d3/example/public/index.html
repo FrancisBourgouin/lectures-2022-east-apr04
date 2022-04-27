@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Express</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Super cool title !</h1>
+      <h2>Today's time is : <time></time></h2>
+    </header>
+    <section id="time">
+      <h1>Heron's time?</h1>
+      <h2></h2>
+      <button>Fetch time</button>
+    </section>
+    <section id="weather">
+      <button>Fetch weather!</button>
+    </section>
+  </body>
+  <script>
+    $(document).ready(() => {
+      const date = new Date();
+
+      $("header h2 time").append(" " + date);
+
+      const updateTimezone = (timezone) => {
+        $("section h2").text(timezone);
+      };
+      const fetchTimezone = () => {
+        $.ajax("/timezone/heron")
+          .then((res) => updateTimezone(res.timezone))
+          .catch((err) => console.log(err));
+      };
+
+      $("#time button").click(fetchTimezone);
+
+      const fetchWeather = () => {
+        $.ajax("/weather/london").then((res) => $("#weather").html(res));
+      };
+
+      $("#weather button").click(fetchWeather);
+    });
+  </script>
+</html>
