@@ -55,7 +55,7 @@ We use naming conventions to increase consistency which provides us with some le
 +----------------+
 |    student    |  <-- Singular
 +----------------+
-| PK | id        |  <-- Primary Key
+| PK | id  SERIAL|  <-- Primary Key
 |    | name      |  <-- Singular
 | FK | cohort_id |  <-- <table>_id
 +----------------+
@@ -115,3 +115,11 @@ There is a [list](https://github.com/kdeldycke/awesome-falsehood) of other resou
 - Normalization is a systematic approach of decomposing tables to eliminate data redundancy(repetition)
 
 - [Database Normalization](https://www.studytonight.com/dbms/database-normalization.php)
+
+# Anti Normalization
+
+Products -> price
+
+Client
+
+Order -> total_price
