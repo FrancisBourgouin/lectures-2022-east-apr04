@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  padding: 1em;
+  margin: 1em;
+  list-style-type: none;
+}
+li.sad {
+  border: 1em solid rgb(178, 41, 41);
+  background-color: rgba(178, 41, 41, 0.4);
+}
+li.happy {
+  border: 1em solid rgba(55, 174, 55, 1);
+  background-color: rgba(55, 174, 55, 0.4);
+}
