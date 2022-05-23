@@ -1,0 +1,33 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  text-align: center;
+}
+
+.Header {
+  padding: 1em;
+  background: rgb(174, 87, 6);
+  color: white;
+  margin-bottom: 1em;
+}
+
+.CoffeeDrinkForm {
+  margin: 1em auto;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CoffeeDrinkListItem {
+  list-style-type: none;
+  font-size: 0.5em;
+}
+
+.CoffeeDrinkListItem:nth-of-type(2n) {
+  background: rgb(174, 87, 6);
+  color: white;
+}
