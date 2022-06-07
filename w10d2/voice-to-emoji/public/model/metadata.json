@@ -1,0 +1,14 @@
+{
+  "tfjsSpeechCommandsVersion": "0.4.0",
+  "modelName": "TMv2",
+  "timeStamp": "2022-06-07T15:46:02.140Z",
+  "wordLabels": [
+    "Background Noise",
+    "Ehm",
+    "Family",
+    "Fromage",
+    "Potato",
+    "Poulet",
+    "Rutabaga"
+  ]
+}
